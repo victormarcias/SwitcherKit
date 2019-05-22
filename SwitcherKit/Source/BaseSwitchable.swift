@@ -13,19 +13,26 @@ public class BaseSwitchable<T> {
     public typealias SwitchableCondition = (() -> Bool)
     
     private var baseValue: T
+    private var setCount: Int = 0
+    
+    public var value: T {
+        return baseValue
+    }
     
     init(_ baseValue: T) {
         self.baseValue = baseValue
     }
     
-    func switchValue(for specificValue: T, _ condition: SwitchableCondition) -> T {
+    internal func switchValue(for specificValue: T, _ condition: SwitchableCondition) -> Self {
         if condition() {
             baseValue = specificValue
+            setCount = setCount + 1
+            assert(setCount == 1, "Value set more than once. Check your conditions.")
         }
-        return baseValue
+        return self
     }
     
-    public func custom(_ specificValue: T, _ condition: SwitchableCondition) -> T {
+    public func custom(_ specificValue: T, _ condition: SwitchableCondition) -> Self {
         return switchValue(for: specificValue, condition)
     }
 }

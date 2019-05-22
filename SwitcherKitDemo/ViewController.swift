@@ -18,9 +18,16 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let value = OSSwitchable<Int>(10).iOS10(88)
+        let value = OSSwitchable<Int>(1)
+            .iOS12(12)
+            .iOS11(11)
+            .iOS10(10)
+            .iOS9(9)
+            .custom(99) { () -> Bool in
+                return false
+            }
         
-        print(value)
+        print(value.value)
     }
 
 }
