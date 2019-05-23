@@ -10,16 +10,11 @@ import UIKit
 import SwitcherKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let value = OSSwitchable<Int>(1)
+        let iOSswitchable = iOSVersionSwitchable<Int>(1)
             .iOS_9(9)
             .iOS_10(10)
             .iOS_11(11)
@@ -28,7 +23,25 @@ class ViewController: UIViewController {
                 return false
             }
         
-        print(value.value)
+        print(iOSswitchable.value)
+        
+        let OSswitchable = OSSwitchable<String>("Where am I?")
+            .iOS("I'm on iPhone")
+            .tvOS("I'm on TV")
+            .watchOS("I'm on a watch")
+            .windows("I'm on Windows")
+            .linux("I'm on Linux")
+        
+        print(OSswitchable.value)
+        
+        let block = iOSVersionSwitchable<()->Void> {
+            print("lala")
+        }.iOS_12 {
+            print("This is iOS 12")
+        }
+        
+        // magic
+        block.value()
     }
 
 }

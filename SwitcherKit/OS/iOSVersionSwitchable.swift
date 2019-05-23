@@ -1,5 +1,5 @@
 //
-//  OSSwitchable.swift
+//  iOSVersionSwitchable.swift
 //  SwitcherKit
 //
 //  Created by Victor Marcias on 2019-05-18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class OSSwitchable<T>: BaseSwitchable<T> {
+public class iOSVersionSwitchable<T>: BaseSwitchable<T> {
     
     public func iOS_9(_ value: T) -> Self {
         return switchValue(for: value) {
