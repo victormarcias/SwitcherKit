@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwitcherKit
 
 class ViewController: UIViewController {
 
@@ -19,10 +20,10 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         let value = OSSwitchable<Int>(1)
-            .iOS12(12)
-            .iOS11(11)
-            .iOS10(10)
-            .iOS9(9)
+            .iOS_9(9)
+            .iOS_10(10)
+            .iOS_11(11)
+            .iOS_12(12)
             .custom(99) { () -> Bool in
                 return false
             }

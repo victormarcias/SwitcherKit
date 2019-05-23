@@ -19,11 +19,11 @@ public class BaseSwitchable<T> {
         return baseValue
     }
     
-    init(_ baseValue: T) {
+    public init(_ baseValue: T) {
         self.baseValue = baseValue
     }
     
-    internal func switchValue(for specificValue: T, _ condition: SwitchableCondition) -> Self {
+    func switchValue(for specificValue: T, _ condition: SwitchableCondition) -> Self {
         if condition() {
             baseValue = specificValue
             setCount = setCount + 1
