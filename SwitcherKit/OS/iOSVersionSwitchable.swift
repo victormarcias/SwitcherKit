@@ -10,6 +10,14 @@ import Foundation
 
 public class iOSVersionSwitchable<T>: BaseSwitchable<T> {
     
+    public func iOS_8(_ value: T) -> Self {
+        return switchValue(for: value) {
+            if #available(iOS 9, *) { return false }
+            if #available(iOS 8, *) { return true }
+            return false
+        }
+    }
+    
     public func iOS_9(_ value: T) -> Self {
         return switchValue(for: value) {
             if #available(iOS 10, *) { return false }

@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         let iOSswitchable = iOSVersionSwitchable<Int>(1)
+            .iOS_8(8)
             .iOS_9(9)
             .iOS_10(10)
             .iOS_11(11)
