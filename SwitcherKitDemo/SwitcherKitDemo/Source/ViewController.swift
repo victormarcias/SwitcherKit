@@ -34,14 +34,11 @@ class ViewController: UIViewController {
         
         print(OSswitchable.value)
         
-        let block = iOSVersionSwitchable<()->Void> {
-            print("lala")
+        iOSVersionSwitch {
+            print("Hello hello")
         }.iOS_12 {
             print("This is iOS 12")
-        }
-        
-        // magic
-        block.value()
+        }.execute()
     }
 
 }
