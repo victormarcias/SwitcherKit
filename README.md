@@ -110,4 +110,22 @@ let featureView = MyFeatureSwitchable<ABFeatureView>(NoFeatureView())
 
 class MyFeatureSwitch: MyFeatureSwitchable<()->Void> {}
 
+// Result
+
+MyFeatureSwitch {
+    // use FeatureA view
+}.featureB {
+    // use FeatureB view
+}.execute()
+
+// or...
+
+MyFeatureSwitch {
+    // don't use Feature
+}.featureA {
+    // use FeatureA stuff
+}.featureB {
+    // use FeatureB stuff
+}.execute()
+
 ```
