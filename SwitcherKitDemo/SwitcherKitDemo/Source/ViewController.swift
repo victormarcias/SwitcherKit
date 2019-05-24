@@ -45,5 +45,15 @@ class ViewController: UIViewController {
             .iPad(.green)
             .iPod(.purple)
             .value
+        
+        view.backgroundColor = ConfigurationSwitchable<UIColor>(debug: .red)
+            .release(.white)
+            .value
+        
+        ConfigurationSwitch(debug: {
+            //
+        }).release {
+            //
+        }.execute()
     }
 }
