@@ -88,22 +88,22 @@ public class MyFeatureSwitchable<T>: BaseSwitchable<T> {
     
     public func featureA(_ value: T) -> Self {
         return switchValue(for: value) {
-            return featureA.isEnabled
+            return MyFeatureA.isOn
         }
     }
     
     public func featureB(_ value: T) -> Self {
         return switchValue(for: value) {
-            return featureA.isEnabled
+            return !MyFeatureA.isOn
         }
     }
 }
 
 // Result
 
-let feature = MyFeatureSwitchable<FeatureModule>(NoFeature())
-    .featureA(FeatureA())
-    .featureB(FeatureB())
+let featureView = MyFeatureSwitchable<ABFeatureView>(NoFeatureView())
+    .featureA(FeatureAView())
+    .featureB(FeatureBView())
     .value
 
 // For closures just implement this:
