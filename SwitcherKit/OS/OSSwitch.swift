@@ -9,6 +9,9 @@ import Foundation
 
 public class OSSwitch: OSSwitchable<()->Void> {
     
+    ///
+    /// Execute will apply the value according to its conditions
+    ///
     public func execute() {
         self.value()
     }

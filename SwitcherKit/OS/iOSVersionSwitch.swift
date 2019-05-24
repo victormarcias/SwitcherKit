@@ -9,6 +9,9 @@ import Foundation
 
 public class iOSVersionSwitch: iOSVersionSwitchable<()->Void> {
     
+    ///
+    /// Execute will apply the value according to its conditions
+    ///
     public func execute() {
         self.value()
     }
