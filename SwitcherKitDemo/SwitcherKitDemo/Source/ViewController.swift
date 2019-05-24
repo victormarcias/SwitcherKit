@@ -40,7 +40,10 @@ class ViewController: UIViewController {
         }.iOS_12 {
             print("This is iOS 12")
         }.execute()
+        
+        view.backgroundColor = iOSDeviceSwitchable<UIColor>(.red)
+            .iPad(.green)
+            .iPod(.purple)
+            .value
     }
-
 }
-
