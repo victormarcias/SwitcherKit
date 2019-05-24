@@ -9,11 +9,22 @@ import Foundation
 
 public class ConfigurationSwitchable<T>: BaseSwitchable<T> {
     
-    public required init(debug: T) {
+    // This switch must have a debug and release path
+    public required init(debug: T, release: T) {
         super.init(debug)
         
         let _ = switchValue(for: debug) {
+            // use this defines or override func
             #if DEBUG
+            return true
+            #else
+            return false
+            #endif
+        }
+        
+        let _ = switchValue(for: release) {
+            // use this defines or override func
+            #if (!DEBUG && !ADHOC) || RELEASE
             return true
             #else
             return false
@@ -23,17 +34,8 @@ public class ConfigurationSwitchable<T>: BaseSwitchable<T> {
     
     open func adhoc(_ value: T) -> Self {
         return switchValue(for: value) {
+            // use this define or override func
             #if ADHOC
-            return true
-            #else
-            return false
-            #endif
-        }
-    }
-    
-    open func release(_ value: T) -> Self {
-        return switchValue(for: value) {
-            #if !ADHOC && !DEBUG
             return true
             #else
             return false

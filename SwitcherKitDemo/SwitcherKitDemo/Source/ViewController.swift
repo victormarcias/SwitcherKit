@@ -46,14 +46,14 @@ class ViewController: UIViewController {
             .iPod(.purple)
             .value
         
-        view.backgroundColor = ConfigurationSwitchable<UIColor>(debug: .red)
-            .release(.black)
+        view.backgroundColor = ConfigurationSwitchable<UIColor>(debug: .red, release: .black)
+            .adhoc(.brown)
             .value
         
         ConfigurationSwitch(debug: {
             //
-        }).release {
+        }, release: {
             //
-        }.execute()
+        }).execute()
     }
 }
