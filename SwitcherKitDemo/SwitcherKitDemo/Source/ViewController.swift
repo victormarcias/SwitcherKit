@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             .value
         
         view.backgroundColor = ConfigurationSwitchable<UIColor>(debug: .red)
-            .release(.white)
+            .release(.black)
             .value
         
         ConfigurationSwitch(debug: {

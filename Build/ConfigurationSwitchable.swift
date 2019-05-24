@@ -21,9 +21,19 @@ public class ConfigurationSwitchable<T>: BaseSwitchable<T> {
         }
     }
     
+    open func adhoc(_ value: T) -> Self {
+        return switchValue(for: value) {
+            #if ADHOC
+            return true
+            #else
+            return false
+            #endif
+        }
+    }
+    
     open func release(_ value: T) -> Self {
         return switchValue(for: value) {
-            #if !DEBUG
+            #if !ADHOC && !DEBUG
             return true
             #else
             return false
