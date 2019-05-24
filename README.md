@@ -7,12 +7,12 @@ SwitcherKit is a way or writing elegantly different pathways inside your App/s b
 ## Features
 - [x] Any type pathway switch
 - [x] Closures pathway switch
-- [x] Built-in pathway switches for common scenarios
--- Platform
--- OS
--- Screen sizes
--- Build configurations
--- Environments
+- [x] Built-in pathway switches for common scenarios:
+- Platform
+- OS
+- Screen sizes
+- Build configurations
+- Environments
 - [x] Build your own pathway switches
 
 
@@ -84,7 +84,7 @@ iOSVersionSwitch {
 
 public class MyFeatureSwitchable<T>: BaseSwitchable<T> {
 
-    // just implement switchValue on each method
+    // just implement switchValue on each method and return Self
     
     public func featureA(_ value: T) -> Self {
         return switchValue(for: value) {
