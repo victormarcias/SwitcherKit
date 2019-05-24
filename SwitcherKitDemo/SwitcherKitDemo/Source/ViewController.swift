@@ -55,5 +55,14 @@ class ViewController: UIViewController {
         }, release: {
             //
         }).execute()
+        
+        iPhoneScreenSwitch { print("Inches") }
+            .inches_3_5 { print("3.5 inch") }
+            .inches_4 { print("4 inch") }
+            .inches_4_7 { print("4.7 inch") }
+            .inches_5_5 { print("5.5 inch") }
+            .inches_6_1 { print("6.1 inch") }
+            .inches_6_5 { print("6.5 inch") }
+            .execute()
     }
 }
