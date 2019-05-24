@@ -105,6 +105,9 @@ let featureView = MyFeatureSwitchable<ABFeatureView>(NoFeatureView())
     .featureA(FeatureAView())
     .featureB(FeatureBView())
     .value
+```
+
+```swift
 
 // For closures just implement this:
 
