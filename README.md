@@ -70,9 +70,9 @@ ConfigurationSwitch(debug: {
 iOSVersionSwitch {
     print("Default iOS version")
 }.custom {
-    // This is iOS 22
-    if #available(iOS 23, *) { return false }
-    if #available(iOS 22, *) { return true }
+    // This is iOS 11.1
+    if #available(iOS 11.2, *) { return false }
+    if #available(iOS 11.1, *) { return true }
     return false
 }.execute()
 
