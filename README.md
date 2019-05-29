@@ -63,22 +63,7 @@ ConfigurationSwitch(debug: {
 
 ```
 
-### Add a custom condition to an existing Switch
-
-```swift
-
-iOSVersionSwitch {
-    print("Default iOS version")
-}.custom {
-    // This is iOS 11.1
-    if #available(iOS 11.2, *) { return false }
-    if #available(iOS 11.1, *) { return true }
-    return false
-}.execute()
-
-```
-
-### Add your own Switch
+### Add your own A/B Switch
 
 ```swift
 

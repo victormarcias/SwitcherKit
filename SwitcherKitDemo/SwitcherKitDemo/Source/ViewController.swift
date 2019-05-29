@@ -20,9 +20,6 @@ class ViewController: UIViewController {
             .iOS_10(10)
             .iOS_11(11)
             .iOS_12(12)
-            .custom(99) { () -> Bool in
-                return false
-            }
         
         print(iOSswitchable.value)
         
