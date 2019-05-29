@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SwitcherKit"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.2"
   spec.summary      = "Elegant switching between platform, OS or anything else."
 
   # This description is used to generate tags and improve search results.
@@ -63,7 +63,7 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios
   spec.platform     = :ios, "9.0"
-  spec.swift_version = "4.0"
+  spec.swift_version = "4.2"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
