@@ -19,28 +19,28 @@ public class iPadScreenSwitchable<T>: BaseSwitchable<T> {
     /// Regular iPad, iPad Air (1st, 2nd gen)
     public func inches_9_7(_ value: T) -> Self {
         return switchValue(for: value) {
-            return UIScreen.main.sizeType == .inches_9_7 && !isIPadMini()
+            return UIScreen.main.screenSizeType == .inches_9_7 && !isIPadMini()
         }
     }
     
     /// iPad Pro (Small), iPad Air (3rd gen)
     public func inches_10_5(_ value: T) -> Self {
         return switchValue(for: value) {
-            return UIScreen.main.sizeType == .inches_10_5
+            return UIScreen.main.screenSizeType == .inches_10_5
         }
     }
     
     /// iPad Pro (Medium)
     public func inches_11(_ value: T) -> Self {
         return switchValue(for: value) {
-            return UIScreen.main.sizeType == .inches_11_0
+            return UIScreen.main.screenSizeType == .inches_11_0
         }
     }
     
     /// iPad Pro (Large)
     public func inches_12_9(_ value: T) -> Self {
         return switchValue(for: value) {
-            return UIScreen.main.sizeType == .inches_12_9
+            return UIScreen.main.screenSizeType == .inches_12_9
         }
     }
     
@@ -59,17 +59,20 @@ public class iPadScreenSwitchable<T>: BaseSwitchable<T> {
 
 fileprivate extension UIScreen {
     
-    enum SizeType: CGFloat {
+    //
+    // https://www.apple.com/ipad/compare/
+    //
+    enum ScreenSizeType: CGFloat {
         case unknown = 0.0
-        case inches_9_7 = 2048.0 // 9.7" and iPad mini (7.9")
-        case inches_10_5 = 2224.0
-        case inches_11_0 = 2388.0
-        case inches_12_9 = 2732.0
+        case inches_9_7 = 2048.0    // iPad 9.7", iPad mini (7.9"), iPad Air (1st, 2nd)
+        case inches_10_5 = 2224.0   // iPad Pro (S), iPad Air (3rd gen)
+        case inches_11_0 = 2388.0   // iPad Pro (M)
+        case inches_12_9 = 2732.0   // iPad Pro (L)
     }
     
-    var sizeType: SizeType {
+    var screenSizeType: ScreenSizeType {
         let long = max(nativeBounds.height, nativeBounds.width) // works for landscape too
-        guard let sizeType = SizeType(rawValue: long) else { return .unknown }
+        guard let sizeType = ScreenSizeType(rawValue: long) else { return .unknown }
         return sizeType
     }
 }
