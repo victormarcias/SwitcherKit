@@ -5,7 +5,7 @@
 //  Created by Victor Marcias on 2019-05-24.
 //
 
-import Foundation
+import UIKit
 
 public class iPhoneScreenSwitchable<T>: BaseSwitchable<T> {
     
