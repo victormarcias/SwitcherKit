@@ -28,7 +28,7 @@ pod 'SwitcherKit', :git => 'https://github.com/victormarcias/SwitcherKit.git', :
 
 ## Usage
 
-### Switch a value
+### Switchable value example
 ```swift
 
 let switchableVar = iOSVersionSwitchable<Int>(1)
@@ -41,7 +41,7 @@ let switchableVar = iOSVersionSwitchable<Int>(1)
 print(switchableVar.value) // prints the number of the iOS version
 ```
 
-### Switch with closures
+### Closure example
 ```swift
 
 iOSVersionSwitch {
@@ -49,10 +49,18 @@ iOSVersionSwitch {
 }.iOS_12 {
     print("This is iOS 12")
 }.execute()
-
 ```
 
-### Switch between Debug and Release
+```swift
+
+iOSDeviceSwitch {
+    // do this on iPhone
+}.iPad {
+    // do this on iPad
+}.execute()
+```
+
+### Debug and Release
 ```swift
 
 ConfigurationSwitch(debug: {
@@ -60,7 +68,23 @@ ConfigurationSwitch(debug: {
 }, release: {
     // this is RELEASE
 }).execute()
+```
 
+### Screen size example
+```swift
+
+let image = iPadScreenSwitch<UIImage>(SomeImage())
+    .inches_12(SomeiPadProImage())
+    .value
+```
+
+```swift
+
+iPadScreenSwitch {
+    image = SomeImage()
+}.inches_12 {
+    image = SomeiPadProImage()
+}.execute()
 ```
 
 ### Add your own A/B Switch
@@ -115,5 +139,4 @@ MyFeatureSwitch {
 }.featureB {
     // use FeatureB stuff
 }.execute()
-
 ```
