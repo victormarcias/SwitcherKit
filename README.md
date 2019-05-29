@@ -17,10 +17,10 @@ SwitcherKit is a way or writing elegantly different pathways inside your App/s b
 
 
 ## Requirements
-- Swift 4.2
+- Swift 4.0
 
 ## Installation
-#### Swift 4.2
+#### Swift 4.0
 ```ruby
 pod 'SwitcherKit', :git => 'https://github.com/victormarcias/SwitcherKit.git', :tag => 'master'
 ```
