@@ -1,5 +1,5 @@
 //
-//  OSSwitchable.swift
+//  PlatformSwitchable.swift
 //  SwitcherKit
 //
 //  Created by Victor Marcias on 2019-05-23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class OSSwitchable<T>: BaseSwitchable<T> {
+public class PlatformSwitchable<T>: BaseSwitchable<T> {
     
     public func iOS(_ value: T) -> Self {
         return switchValue(for: value) {

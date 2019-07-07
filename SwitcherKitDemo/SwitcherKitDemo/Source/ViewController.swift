@@ -23,14 +23,14 @@ class ViewController: UIViewController {
         
         print(iOSswitchable.value)
         
-        let OSswitchable = OSSwitchable<String>("Where am I?")
+        let platformSwitch = PlatformSwitchable<String>("Where am I?")
             .iOS("I'm on iPhone")
             .tvOS("I'm on TV")
             .watchOS("I'm on a watch")
             .windows("I'm on Windows")
             .linux("I'm on Linux")
         
-        print(OSswitchable.value)
+        print(platformSwitch.value)
         
         iOSVersionSwitch {
             print("Hello hello")
