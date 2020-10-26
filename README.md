@@ -41,6 +41,8 @@ let switchableVar = iOSVersionSwitchable<Int>(1)
     .iOS_10(10)
     .iOS_11(11)
     .iOS_12(12)
+    .iOS_13(13)
+    .iOS_14(14)
     
 print(switchableVar.value) // prints the number of the iOS version
 ```

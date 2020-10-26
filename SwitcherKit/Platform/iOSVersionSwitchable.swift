@@ -57,4 +57,12 @@ public class iOSVersionSwitchable<T>: BaseSwitchable<T> {
             return false
         }
     }
+    
+    public func iOS_14(_ value: T) -> Self {
+        return switchValue(for: value) {
+            if #available(iOS 15, *) { return false }
+            if #available(iOS 14, *) { return true }
+            return false
+        }
+    }
 }

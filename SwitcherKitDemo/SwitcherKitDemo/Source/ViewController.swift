@@ -21,6 +21,7 @@ class ViewController: UIViewController {
             .iOS_11(11)
             .iOS_12(12)
             .iOS_13(13)
+            .iOS_14(14)
         
         print(iOSswitchable.value)
         
