@@ -28,7 +28,10 @@ pod 'SwitcherKit', :git => 'https://github.com/victormarcias/SwitcherKit.git', :
 ```ruby
 pod 'SwitcherKit', :git => 'https://github.com/victormarcias/SwitcherKit.git', :tag => '0.1.2'
 ```
-
+#### Swift 5.0
+```ruby
+pod 'SwitcherKit', :git => 'https://github.com/victormarcias/SwitcherKit.git', :tag => '0.5.0'
+```
 
 ## Usage
 
