@@ -9,6 +9,16 @@ import Foundation
 
 public class PlatformSwitchable<T>: BaseSwitchable<T> {
     
+    public func simulator(_ value: T) -> Self {
+        return switchValue(for: value) {
+            #if targetEnvironment(simulator)
+            return true
+            #else
+            return false
+            #endif
+        }
+    }
+    
     public func iOS(_ value: T) -> Self {
         return switchValue(for: value) {
             #if os(iOS)

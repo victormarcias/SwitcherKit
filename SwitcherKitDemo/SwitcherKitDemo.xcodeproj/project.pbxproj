@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		0443963C22900111005654AD /* SwitcherKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitcherKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0443965022900114005654AD /* SwitcherKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitcherKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04E49DA527165CDB00D5B20D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		04E49DA527165CDB00D5B20D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		04E49DA927165EF100D5B20D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../../.gitignore; sourceTree = "<group>"; };
 		079772E68AED3F293BEA439F /* Pods-SwitcherKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitcherKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwitcherKitDemo/Pods-SwitcherKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6D75BE532296CDD70003E3A9 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
