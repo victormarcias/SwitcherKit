@@ -29,7 +29,14 @@ public class iPhoneScreenSwitchable<T>: BaseSwitchable<T> {
             return UIScreen.main.screenSizeType == .inches_4_7
         }
     }
-    
+	
+	/// iPhone 1x Mini
+	public func inches_5_4(_ value: T) -> Self {
+		return switchValue(for: value) {
+			return UIScreen.main.screenSizeType == .inches_5_4
+		}
+	}
+	
     /// iPhone 6/7/8... Plus
     public func inches_5_5(_ value: T) -> Self {
         return switchValue(for: value) {
@@ -71,9 +78,10 @@ fileprivate extension UIScreen {
         case inches_3_5 = 960.0     // iPhone 4
         case inches_4 = 1136.0      // iPhone 5, 5s, SE...
         case inches_4_7 = 1334.0    // iPhone 6, 7, 8...
+        case inches_5_4 = 2340.0    // iPhone 1x Mini
         case inches_5_5 = 1920.0    // iPhone 6/7/8 Plus...
-        case inches_6_1 = 1792.0    // iPhone X, XS...
         case inches_5_8 = 2436.0    // iPhone XR
+        case inches_6_1 = 1792.0    // iPhone X, XS...
         case inches_6_5 = 2688.0    // iPhone XS Max
     }
     

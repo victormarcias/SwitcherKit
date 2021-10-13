@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162B8586B9770ADC8C234996 /* libPods-SwitcherKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A553B57BABE2F520B70ECA /* libPods-SwitcherKitDemo.a */; };
 		6D75BE592296CDD80003E3A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D75BE532296CDD70003E3A9 /* ViewController.swift */; };
 		6D75BE5C2296CDD80003E3A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D75BE572296CDD70003E3A9 /* AppDelegate.swift */; };
 		6D75BE5F2296D5F70003E3A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D75BE542296CDD70003E3A9 /* Assets.xcassets */; };
 		6D75BE602296D6000003E3A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D75BE552296CDD70003E3A9 /* LaunchScreen.storyboard */; };
-		C89BB024C0CC2B479B1F0EBE /* libPods-SwitcherKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D0D01C8F168884BFDCA5E4 /* libPods-SwitcherKitDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +27,16 @@
 /* Begin PBXFileReference section */
 		0443963C22900111005654AD /* SwitcherKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitcherKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0443965022900114005654AD /* SwitcherKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitcherKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		08D0D01C8F168884BFDCA5E4 /* libPods-SwitcherKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwitcherKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		170E44901C20B0ABB4010C79 /* Pods-SwitcherKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitcherKitDemo.release.xcconfig"; path = "Target Support Files/Pods-SwitcherKitDemo/Pods-SwitcherKitDemo.release.xcconfig"; sourceTree = "<group>"; };
-		1C5329ABC24FC12B50402E51 /* Pods-SwitcherKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitcherKit.release.xcconfig"; path = "Target Support Files/Pods-SwitcherKit/Pods-SwitcherKit.release.xcconfig"; sourceTree = "<group>"; };
-		56408A609124BD451F2DC449 /* Pods-SwitcherKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitcherKit.debug.xcconfig"; path = "Target Support Files/Pods-SwitcherKit/Pods-SwitcherKit.debug.xcconfig"; sourceTree = "<group>"; };
+		04E49DA527165CDB00D5B20D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		04E49DA927165EF100D5B20D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../../.gitignore; sourceTree = "<group>"; };
+		079772E68AED3F293BEA439F /* Pods-SwitcherKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitcherKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwitcherKitDemo/Pods-SwitcherKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6D75BE532296CDD70003E3A9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6D75BE542296CDD70003E3A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D75BE562296CDD70003E3A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D75BE572296CDD70003E3A9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D75BE582296CDD70003E3A9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E549F036821A5652441324F /* Pods-SwitcherKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitcherKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwitcherKitDemo/Pods-SwitcherKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		9F72E92F7EC5048FAB49F639 /* libPods-SwitcherKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwitcherKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79EBE5705D8316E150B056A7 /* Pods-SwitcherKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitcherKitDemo.release.xcconfig"; path = "Target Support Files/Pods-SwitcherKitDemo/Pods-SwitcherKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E0A553B57BABE2F520B70ECA /* libPods-SwitcherKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwitcherKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C89BB024C0CC2B479B1F0EBE /* libPods-SwitcherKitDemo.a in Frameworks */,
+				162B8586B9770ADC8C234996 /* libPods-SwitcherKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +64,7 @@
 				6D75BE522296CDD70003E3A9 /* SwitcherKitDemo */,
 				0443963D22900111005654AD /* Products */,
 				2441E42F56E92DEA2DD205FA /* Pods */,
-				0F8A58FB72AF7CF67B1ABD75 /* Frameworks */,
+				BEB7083528CB9D4AD21DFD27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,22 +77,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0F8A58FB72AF7CF67B1ABD75 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9F72E92F7EC5048FAB49F639 /* libPods-SwitcherKit.a */,
-				08D0D01C8F168884BFDCA5E4 /* libPods-SwitcherKitDemo.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		2441E42F56E92DEA2DD205FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				56408A609124BD451F2DC449 /* Pods-SwitcherKit.debug.xcconfig */,
-				1C5329ABC24FC12B50402E51 /* Pods-SwitcherKit.release.xcconfig */,
-				8E549F036821A5652441324F /* Pods-SwitcherKitDemo.debug.xcconfig */,
-				170E44901C20B0ABB4010C79 /* Pods-SwitcherKitDemo.release.xcconfig */,
+				079772E68AED3F293BEA439F /* Pods-SwitcherKitDemo.debug.xcconfig */,
+				79EBE5705D8316E150B056A7 /* Pods-SwitcherKitDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -110,6 +98,8 @@
 		6D75BE522296CDD70003E3A9 /* SwitcherKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04E49DA927165EF100D5B20D /* .gitignore */,
+				04E49DA527165CDB00D5B20D /* Podfile */,
 				6D75BE5E2296D18B0003E3A9 /* Resources */,
 				6D5E4A232296D72D00CA33D5 /* Source */,
 			);
@@ -126,6 +116,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		BEB7083528CB9D4AD21DFD27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0A553B57BABE2F520B70ECA /* libPods-SwitcherKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,7 +131,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0443965922900114005654AD /* Build configuration list for PBXNativeTarget "SwitcherKitDemo" */;
 			buildPhases = (
-				B491115E183776F17634473C /* [CP] Check Pods Manifest.lock */,
+				634CB620AF9BF30594FC4A7A /* [CP] Check Pods Manifest.lock */,
 				0443963822900111005654AD /* Sources */,
 				0443963922900111005654AD /* Frameworks */,
 				0443963A22900111005654AD /* Resources */,
@@ -172,7 +170,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "Victor Marcias";
 				TargetAttributes = {
 					0443963B22900111005654AD = {
@@ -224,7 +222,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B491115E183776F17634473C /* [CP] Check Pods Manifest.lock */ = {
+		634CB620AF9BF30594FC4A7A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,6 +311,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -338,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -374,6 +373,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -393,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -405,13 +405,13 @@
 		};
 		0443965A22900114005654AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E549F036821A5652441324F /* Pods-SwitcherKitDemo.debug.xcconfig */;
+			baseConfigurationReference = 079772E68AED3F293BEA439F /* Pods-SwitcherKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwitcherKitDemo/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,20 +419,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.victormarcias.SwitcherKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		0443965B22900114005654AD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 170E44901C20B0ABB4010C79 /* Pods-SwitcherKitDemo.release.xcconfig */;
+			baseConfigurationReference = 79EBE5705D8316E150B056A7 /* Pods-SwitcherKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwitcherKitDemo/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.victormarcias.SwitcherKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -449,7 +449,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -463,9 +462,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitcherKit.app/SwitcherKit";
 			};
 			name = Debug;
 		};
@@ -473,7 +470,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -486,9 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.victormarcias.SwitcherKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitcherKit.app/SwitcherKit";
 			};
 			name = Release;
 		};

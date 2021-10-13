@@ -1,0 +1,16 @@
+PODS:
+  - SwitcherKit (0.5.0)
+
+DEPENDENCIES:
+  - SwitcherKit (from `../SwitcherKit.podspec`)
+
+EXTERNAL SOURCES:
+  SwitcherKit:
+    :path: "../SwitcherKit.podspec"
+
+SPEC CHECKSUMS:
+  SwitcherKit: c024ab517ddd14541a1d845295c27b76ee23b067
+
+PODFILE CHECKSUM: 82ad3afb298c70bf03d7db463b4cef545145296f
+
+COCOAPODS: 1.11.2

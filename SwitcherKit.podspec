@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SwitcherKit"
-  spec.version      = "0.1.2"
+  spec.version      = "0.5.0"
   spec.summary      = "Elegant switching between platform, OS or anything else."
 
   # This description is used to generate tags and improve search results.
@@ -27,33 +27,10 @@ Pod::Spec.new do |spec|
   spec.description  = "Elegant switching between platform, OS or anything else."
 
   spec.homepage     = "http://github.com/victormarcias/SwitcherKit"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
-
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See https://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
 
   #spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
-
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
-
+	
   spec.author             = { "Victor Marcias" => "victormarcias@gmail.com" }
-  # Or just: spec.author    = "Victor Marcias"
-  # spec.authors            = { "Victor Marcias" => "victormarcias@gmail.com" }
-  # spec.social_media_url   = "https://twitter.com/Victor Marcias"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -62,8 +39,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.platform     = :ios
-  spec.platform     = :ios, "9.0"
-  spec.swift_version = "4.2"
+  spec.platform     = :ios, "10.0"
+  spec.swift_version = "5.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
