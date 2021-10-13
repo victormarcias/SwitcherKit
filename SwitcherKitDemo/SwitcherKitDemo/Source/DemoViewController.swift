@@ -9,7 +9,7 @@
 import UIKit
 import SwitcherKit
 
-class ViewController: UIViewController {
+class DemoViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -66,22 +66,25 @@ class ViewController: UIViewController {
 		// MARK: - Screen Size Example
 		
         iPhoneScreenSwitch { print("Inches") }
-            .inches_3_5 { print("3.5 inch") }
-            .inches_4 { print("4 inch") }
-            .inches_4_7 { print("4.7 inch") }
-			.inches_5_4 { print("5.4 inch") }
-            .inches_5_5 { print("5.5 inch") }
-            .inches_6_1 { print("6.1 inch") }
-            .inches_6_5 { print("6.5 inch") }
+			.size(.inches_3_5) { print("iPhone 4") }
+			.size(.inches_4) { print("iPhone 5 or SE") }
+			.size(.inches_4_7) { print("iPhone 6, 7, 8") }
+			.size(.inches_5_4) { print("iPhone 1x mini") }
+			.size(.inches_5_5) { print("iPhone 6,7,8 Plus") }
+			.size(.inches_6_1) { print("iPhone X, Xs...") }
+			.size(.inches_6_5) { print("iPhone Pro / Max") }
             .execute()
 		
 		view.backgroundColor = iPhoneScreenSwitchable<UIColor>(.white)
-			.inches_3_5(.lightGray)
-			.inches_4(.red)
-			.inches_4_7(.blue)
-			.inches_5_4(.orange)
-			.inches_5_5(.purple)
-			.inches_6_1(.cyan)
+            .size(.inches_3_5, .gray)
+			.size(.inches_4, .darkGray)
+			.size(.inches_4_7, .red)
+			.size(.inches_5_4, .green)
+			.size(.inches_5_5, .brown)
+			.size(.inches_6_1, .orange)
+            .size(.inches_6_1_Pro, .cyan)
+            .size(.inches_6_5, .brown)
+            .size(.inches_6_7_Pro, .magenta)
 			.value
     }
 }

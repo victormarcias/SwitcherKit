@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		162B8586B9770ADC8C234996 /* libPods-SwitcherKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A553B57BABE2F520B70ECA /* libPods-SwitcherKitDemo.a */; };
-		6D75BE592296CDD80003E3A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D75BE532296CDD70003E3A9 /* ViewController.swift */; };
+		6D75BE592296CDD80003E3A9 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D75BE532296CDD70003E3A9 /* DemoViewController.swift */; };
 		6D75BE5C2296CDD80003E3A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D75BE572296CDD70003E3A9 /* AppDelegate.swift */; };
 		6D75BE5F2296D5F70003E3A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D75BE542296CDD70003E3A9 /* Assets.xcassets */; };
 		6D75BE602296D6000003E3A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D75BE552296CDD70003E3A9 /* LaunchScreen.storyboard */; };
@@ -30,7 +30,7 @@
 		04E49DA527165CDB00D5B20D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		04E49DA927165EF100D5B20D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../../.gitignore; sourceTree = "<group>"; };
 		079772E68AED3F293BEA439F /* Pods-SwitcherKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitcherKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwitcherKitDemo/Pods-SwitcherKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		6D75BE532296CDD70003E3A9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D75BE532296CDD70003E3A9 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		6D75BE542296CDD70003E3A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D75BE562296CDD70003E3A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D75BE572296CDD70003E3A9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				6D75BE572296CDD70003E3A9 /* AppDelegate.swift */,
-				6D75BE532296CDD70003E3A9 /* ViewController.swift */,
+				6D75BE532296CDD70003E3A9 /* DemoViewController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -252,7 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D75BE5C2296CDD80003E3A9 /* AppDelegate.swift in Sources */,
-				6D75BE592296CDD80003E3A9 /* ViewController.swift in Sources */,
+				6D75BE592296CDD80003E3A9 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
